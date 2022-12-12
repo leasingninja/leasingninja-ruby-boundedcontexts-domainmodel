@@ -6,7 +6,8 @@ module LeasingNinja
       class Amount
 
         def initialize(amount_in_cents, currency)
-          @amount_in_cents, @currency = amount_in_cents, currency
+          @amount_in_cents = amount_in_cents
+          @currency = currency
         end
 
         def self.of(amount, currency)
@@ -21,9 +22,7 @@ module LeasingNinja
           amount_in_cents / 100
         end
 
-        attr_reader :amount_in_cents
-
-        attr_reader :currency
+        attr_reader :amount_in_cents, :currency
 
         def ==(other)
           if other.is_a? Amount
@@ -47,5 +46,3 @@ module LeasingNinja
     end
   end
 end
-
-
