@@ -19,10 +19,14 @@ module LeasingNinja
         end
 
         def amount
-          amount_in_cents / 100
+          amount_in_cents / 100.0
         end
 
         attr_reader :amount_in_cents, :currency
+
+        def to_s
+          "#{currency} #{amount}"
+        end
 
         def ==(other)
           if other.is_a? Amount

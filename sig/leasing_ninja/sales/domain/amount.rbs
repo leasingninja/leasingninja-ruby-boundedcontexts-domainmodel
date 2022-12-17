@@ -1,0 +1,19 @@
+module LeasingNinja
+  module Sales
+    module Domain
+      class Amount
+        def initialize: (Integer amount_in_cents, Currency currency) -> void
+
+        def self.of: (Float amount, Currency currency) -> Amount
+
+        def self.of_cents: (Integer amount_in_cents, Currency currency) -> Amount
+
+        def amount: () -> Float
+
+        attr_reader amount_in_cents: Integer
+
+        attr_reader currency: Currency
+      end
+    end
+  end
+end

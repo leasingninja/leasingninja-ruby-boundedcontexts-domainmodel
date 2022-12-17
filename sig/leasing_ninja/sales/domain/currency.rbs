@@ -1,0 +1,16 @@
+module LeasingNinja
+  module Sales
+    module Domain
+      class Currency
+        def initialize: (String currency_string) -> void
+
+        EUR: Currency
+        GBP: Currency
+        USD: Currency
+
+        @currency_string: string
+
+      end
+    end
+  end
+end
