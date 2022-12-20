@@ -3,7 +3,7 @@
 module LeasingNinja
   module Sales
     module Domain
-      class Contract
+      class Customer < DDDBits::TinyType
       end
     end
   end

@@ -1,0 +1,12 @@
+module LeasingNinja
+  module Sales
+    module Domain
+      class LeaseTerm
+        def self.of_months:(Integer no_of_months) -> LeaseTerm
+        def self.of_years:(Integer no_of_years) -> LeaseTerm
+
+        def no_of_months: -> Integer
+      end
+    end
+  end
+end

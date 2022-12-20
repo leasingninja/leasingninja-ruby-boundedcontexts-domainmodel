@@ -19,7 +19,7 @@ module LeasingNinja
         end
 
         def amount
-          amount_in_cents / 100.0
+          @amount_in_cents / 100.0
         end
 
         attr_reader :amount_in_cents, :currency
@@ -39,8 +39,8 @@ module LeasingNinja
         alias eql? ==
 
         def hash
-          final int prime = 31
-          int result = 1
+          prime = 31
+          result = 1
           result = prime * result + amount_in_cents.hash
           result = prime * result + currency.hash
           result
