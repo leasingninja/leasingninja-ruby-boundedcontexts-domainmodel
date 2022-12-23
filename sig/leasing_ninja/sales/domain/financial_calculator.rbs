@@ -1,0 +1,9 @@
+module LeasingNinja
+  module Sales
+    module Domain
+      class FinancialCalculator
+        def self.pmt:(n: Float, i_in_percent: Float, pv: Float, fv: Float, s: Float) -> Float
+      end
+    end
+  end
+end

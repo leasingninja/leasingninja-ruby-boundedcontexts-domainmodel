@@ -1,0 +1,26 @@
+module LeasingNinja
+  module Sales
+    module Domain
+      class Contract
+        @number: ContractNumber
+        @lessee: Customer
+        @car: Car
+        @price: Amount
+
+        #@calculation: Contract::Calculation
+
+        def initialize: (ContractNumber number, Customer lessee, Car car, Amount price) -> void
+
+        def calculate_installment_for: -> void
+
+        def calculated?: -> bool
+
+        def lease_term: -> LeaseTerm
+
+        def interest: -> Interest
+
+        def installment: -> Amount
+      end
+    end
+  end
+end
